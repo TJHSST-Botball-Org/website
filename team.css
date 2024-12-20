@@ -17,6 +17,11 @@ body > h1 {
     
 }
 
+.member-wrapper > img {
+    width: 200px;
+    height: 250px;
+}
+
 .team-wrapper {
     padding: 2rem;
 

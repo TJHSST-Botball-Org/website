@@ -1,0 +1,18 @@
+body > h1 {
+  width: 100%;
+  text-align: center;
+  color: #1ca0ed;
+}
+
+.photo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.photo-wrapper > img {
+  height: 300px;
+  width: auto;
+  border-radius: 8px;
+}

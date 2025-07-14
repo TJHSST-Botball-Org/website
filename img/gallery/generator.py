@@ -18,7 +18,7 @@ template_beginning = '''<!DOCTYPE html>
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="gallery.css" />
-    <link rel="icon" type="image/x-icon" href="img/botball.png" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -26,9 +26,10 @@ const Team = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             2024-2025 Team
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Our diverse team of students brings together building, programming, 
-            and strategic thinking to create award-winning robots.
+          <img src="src/assets/botballgroupteam.jpg" className="mx-auto rounded-2xl w-[600px] h-[400px] object-cover"/>
+          <p className="text-xs text-muted-foreground max-w-3xl mx-auto mb-8 mt-5">
+            Mr. Billington, Claire Zhu, Zoya Moloo, Kyle Penska, Jax O'Donoghue, Agastya Mittal, Ronit Singh, Surya Raj, Madhav Tirumale, 
+            <br />Devin Park, Kimberly Cruz-Cruz, Eric Guo
           </p>
         </div>
 

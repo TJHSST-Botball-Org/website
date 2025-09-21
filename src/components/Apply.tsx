@@ -8,6 +8,37 @@ import { useEffect, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
 const Apply = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    grade: "",
+    experience: "",
+    message: ""
+  });
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const deadline = new Date("2025-10-03T20:00:00Z"); // 4:00 PM ET in UTC
+    const now = new Date();
+
+    if (now >= deadline) {
+      setIsVisible(false);
+    }
+  }, []);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast({
+      title: "Application Submitted!",
+      description: "Thank you for your interest. We'll get back to you soon.",
+    });
+    setFormData({ name: "", email: "", grade: "", experience: "", message: "" });
+  };
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
 
   const benefits = [
     {

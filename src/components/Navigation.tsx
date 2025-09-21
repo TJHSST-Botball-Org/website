@@ -27,13 +27,16 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      scrolled ? "bg-background/80 backdrop-blur-md border-b border-border/50" : "bg-gray-700"
-    }`}>
+    <nav
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-background/80 backdrop-blur-md border-b border-border/50"
+          : "bg-gray-700"
+      }`}
+    >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center h-16 sm:h-20">
           {/* Removed Logo and Text */}
-          
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button
@@ -65,7 +68,9 @@ const Navigation = () => {
                 variant="ghost"
                 size="sm"
                 className="hover:bg-primary/10 hover:text-primary"
-                onClick={() => window.open("https://github.com/TJHSST-Botball-Org", "_blank")}
+                onClick={() =>
+                  window.open("https://github.com/TJHSST-Botball-Org", "_blank")
+                }
               >
                 <Github className="h-4 w-4" />
               </Button>
@@ -73,22 +78,19 @@ const Navigation = () => {
                 variant="ghost"
                 size="sm"
                 className="hover:bg-primary/10 hover:text-primary"
-                onClick={() => window.open("https://www.instagram.com/tj.botball/", "_blank")}
+                onClick={() =>
+                  window.open("https://www.instagram.com/tj.botball/", "_blank")
+                }
               >
                 <Instagram className="h-4 w-4" />
               </Button>
             </div>
             {isBeforeDeadline && (
-              <Button 
-                onClick={() => {
-                  window.open("https://forms.gle/kjZEMQYNkX7yDR5X6", "_blank");
-                }}
-              >
+              <Button onClick={() => scrollToSection("apply")}>
                 Apply for the Team
               </Button>
             )}
           </div>
-
           {/* Mobile menu button */}
           <div className="md:hidden">
             <Button
@@ -96,7 +98,11 @@ const Navigation = () => {
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {isOpen ? (
+                <X className="h-5 w-5" />
+              ) : (
+                <Menu className="h-5 w-5" />
+              )}
             </Button>
           </div>
         </div>
@@ -133,21 +139,36 @@ const Navigation = () => {
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={() => window.open("https://github.com/TJHSST-Botball-Org", "_blank")}
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/TJHSST-Botball-Org",
+                      "_blank"
+                    )
+                  }
                 >
                   <Github className="h-4 w-4" />
                 </Button>
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={() => window.open("https://www.instagram.com/tj.botball/", "_blank")}
+                  onClick={() =>
+                    window.open(
+                      "https://www.instagram.com/tj.botball/",
+                      "_blank"
+                    )
+                  }
                 >
                   <Instagram className="h-4 w-4" />
                 </Button>
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={() => window.open("https://www.facebook.com/groups/348762459668723/", "_blank")}
+                  onClick={() =>
+                    window.open(
+                      "https://www.facebook.com/groups/348762459668723/",
+                      "_blank"
+                    )
+                  }
                 >
                   <Facebook className="h-4 w-4" />
                 </Button>

@@ -121,29 +121,6 @@ const Team = () => {
             </Card>
           ))}
         </div>
-
-        {/* Call to action */}
-        {new Date() < new Date("2025-10-05T23:59:00") && (
-          <div className="text-center bg-card rounded-2xl p-8 sm:p-12 border">
-            <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-primary">
-              Apply for the 2025-26 School Year!
-            </h3>
-            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-8 px-2">
-              We're looking for passionate students interested in robotics,
-              programming, and engineering. No prior experience required – just
-              enthusiasm, willingness to learn, and a good sense of humor :)
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <Button
-                onClick={() => {
-                  window.open("https://forms.gle/kjZEMQYNkX7yDR5X6", "_blank");
-                }}
-              >
-                Apply Now
-              </Button>
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );

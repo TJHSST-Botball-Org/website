@@ -4,7 +4,12 @@
 
 ---
 
-First, download development files, run:
+First, install npm, run:
+```zsh
+npm install
+```
+
+Then, download development files, run:
 ```zsh
 npm run build
 ```

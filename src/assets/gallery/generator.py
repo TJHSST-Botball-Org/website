@@ -22,7 +22,7 @@ const Gallery = () => {
 
 gallery_item_template = '''    {{
       type: "photo",
-      image: "/src/assets/gallery/{folder}/{filename}",
+      image: "/botball/src/assets/gallery/{folder}/{filename}",
       category: "{folder}"
     }},
 '''

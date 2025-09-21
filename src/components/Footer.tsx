@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Github, Instagram, Facebook, Mail, ExternalLink, Heart } from "lucide-react";
-import logoImage from "/public/favicon.ico";
 
 const Footer = () => {
   const quickLinks = [
@@ -34,7 +33,7 @@ const Footer = () => {
           {/* Logo and description */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <img src={logoImage} alt="TJ Botball Logo" className="h-12 w-12 animate-glow-pulse" />
+              <img src="/botball/public/favicon.ico" alt="TJ Botball Logo" className="h-12 w-12 animate-glow-pulse" />
               <span className="text-2xl font-bold text-gradient">TJHSST Botball</span>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-6 max-w-md">

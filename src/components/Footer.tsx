@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Instagram, Facebook, Mail, ExternalLink, Heart } from "lucide-react";
-import logoImage from "/botball/public/favicon.ico";
+import logoImage from "/public/favicon.ico";
 
 const Footer = () => {
   const quickLinks = [

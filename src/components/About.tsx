@@ -40,7 +40,7 @@ const About = () => {
           <div>
             <div className="relative">
               <img 
-                src="/botball/src/assets/robot.jpg" 
+                src="/src/assets/robot.jpg" 
                 alt="Students working on robots in workshop" 
                 className="rounded-lg w-full h-auto"
               />

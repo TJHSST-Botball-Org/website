@@ -36,27 +36,27 @@ const About = () => {
         </div>
 
         {/* Main content with image and description */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
           <div>
             <div className="relative">
               <img 
                 src="/src/assets/robot.jpg" 
                 alt="Students working on robots in workshop" 
-                className="rounded-lg"
+                className="rounded-lg w-full h-auto"
               />
             </div>
           </div>
           
           <div>
-            <h3 className="text-3xl font-bold text-foreground mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 md:mb-6">
               Engineering Robots with Precision in Mind
             </h3>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-base md:text-lg text-muted-foreground mb-6">
               Our team combines mechanical engineering, software development, and strategic thinking to create 
               robots that can navigate complex challenges autonomously. We use C++ as our primary programming 
               language and work with a variety of sensors, motors, and control systems.
             </p>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-base md:text-lg text-muted-foreground mb-8">
               From initial concept to competition day, our robots represent months of collaborative effort, 
               innovative problem-solving, and rigorous testing to ensure peak performance.
             </p>

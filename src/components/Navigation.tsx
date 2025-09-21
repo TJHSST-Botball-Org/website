@@ -31,7 +31,7 @@ const Navigation = () => {
       scrolled ? "bg-background/80 backdrop-blur-md border-b border-border/50" : "bg-gray-700"
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center h-16"> {/* Changed justify-between to justify-center */}
+        <div className="flex items-center justify-center h-16 sm:h-20">
           {/* Removed Logo and Text */}
           
           {/* Desktop Navigation */}

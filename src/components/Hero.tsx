@@ -32,7 +32,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-background">
+    <section id="home" className="relative min-h-screen flex items-center justify-center bg-background pt-24 sm:pt-28">
       {/* Simple gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-background to-primary/5"></div>
 
@@ -40,22 +40,22 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="space-y-8">
           <img
-            className="mx-auto w-48 h-auto" // Added width and height classes
-            src="src/assets/botball-logo-light.svg" // Ensure this path is correct
+            className="mx-auto w-36 sm:w-40 md:w-48 lg:w-56 h-auto"
+            src="src/assets/botball-logo-light.svg"
             alt="TJ Botball Logo"
           />
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-foreground">
             TJHSST Botball Robotics
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
             The Official Botball Robotics team for Thomas Jefferson High School for Science and Technology
           </p>
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
             Designing, building, and programming two autonomous robots to compete at regional and international levels.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-6 sm:pt-8">
             <Button 
               size="lg"
               onClick={() => scrollToSection("about")}
@@ -74,10 +74,10 @@ const Hero = () => {
 
         {/* Scroll indicator */}
         <div 
-          className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 cursor-pointer" // Changed to -bottom-8
+          className="absolute -bottom-16 sm:-bottom-20 left-1/2 -translate-x-1/2 cursor-pointer hidden sm:block"
           onClick={() => scrollToSection("about")}
         >
-          <ChevronDown className="h-6 w-6 text-muted-foreground animate-bounce" />
+          <ChevronDown className="h-5 w-5 sm:h-6 sm:w-6 text-muted-foreground animate-bounce" />
         </div>
       </div>
     </section>

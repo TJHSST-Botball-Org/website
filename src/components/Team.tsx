@@ -23,33 +23,32 @@ const Team = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-foreground">
             2024-2025 Team
           </h2>
-          <img src="src/assets/botballgroupteam.jpg" className="mx-auto rounded-2xl w-[600px] h-[400px] object-cover"/>
-          <p className="text-xs text-muted-foreground max-w-3xl mx-auto mb-8 mt-5">
-            Mr. Billington, Claire Zhu, Zoya Moloo, Kyle Penska, Jax O'Donoghue, Agastya Mittal, Ronit Singh, Surya Raj, Madhav Tirumale, 
-            <br />Devin Park, Kimberly Cruz-Cruz, Eric Guo
+          <img src="src/assets/botballgroupteam.jpg" className="mx-auto rounded-2xl w-full max-w-3xl aspect-[3/2] object-cover"/>
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto mb-8 mt-5 px-4 leading-tight">
+            Mr. Billington, Claire Zhu, Zoya Moloo, Kyle Penska, Jax O'Donoghue, Agastya Mittal, Ronit Singh, Surya Raj, Madhav Tirumale
+          </p>
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto mb-8 px-4 leading-tight">
+            Devin Park, Kimberly Cruz-Cruz, Eric Guo
           </p>
         </div>
 
         {/* Team Members Grid */}
-        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 mb-20">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mb-20">
           {teamMembers.map((member, index) => (
             <Card key={index} className="bg-card border text-center">
-              <CardContent className="p-6">
-                <div
-                  className="bg-primary/10 mx-auto mb-4 flex items-center justify-center rounded-[70px] overflow-hidden"
-                  style={{ height: member.heightImage }}
-                >
+              <CardContent className="p-4 sm:p-6">
+                <div className="mx-auto mb-3 sm:mb-4 w-full max-w-[280px] aspect-[4/5] rounded-2xl overflow-hidden bg-primary/10">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h4 className="text-2xl font-semibold text-foreground mb-1">{member.name}</h4>
-                <p className="text-lg text-muted-foreground">Class of {member.year}</p>
+                <h4 className="text-lg sm:text-xl md:text-2xl font-semibold text-foreground mb-1">{member.name}</h4>
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground">Class of {member.year}</p>
               </CardContent>
             </Card>
           ))}
@@ -59,15 +58,15 @@ const Team = () => {
 
         {/* Call to action */}
         {new Date() < new Date('2025-10-05T23:59:00') && (
-          <div className="text-center bg-card rounded-2xl p-12 border">
-            <h3 className="text-3xl font-bold mb-6 text-primary">
+          <div className="text-center bg-card rounded-2xl p-8 sm:p-12 border">
+            <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-primary">
               Apply for the 2025-26 School Year!
             </h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-8 px-2">
               We're looking for passionate students interested in robotics, programming, 
               and engineering. No prior experience required – just enthusiasm, willingness to learn, and a good sense of humor :)
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button 
           onClick={() => {
           window.open("https://forms.gle/kjZEMQYNkX7yDR5X6", "_blank");

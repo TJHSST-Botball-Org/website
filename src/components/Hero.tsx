@@ -41,7 +41,7 @@ const Hero = () => {
         <div className="space-y-8">
           <img
             className="mx-auto w-36 sm:w-40 md:w-48 lg:w-56 h-auto"
-            src="src/assets/botball-logo-light.svg"
+            src="/assets/botball-logo-light.svg"
             alt="TJ Botball Logo"
           />
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-foreground">

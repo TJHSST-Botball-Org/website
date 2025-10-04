@@ -10,11 +10,12 @@ Tested with Python 3.12.3
 '''
 
 # Template beginning for TypeScript
-
-template_beginning = '''// filepath: /Users/madhav/botball-blastoff/src/components/Gallery.tsx
-import { useState } from "react";
+template_beginning = '''// filepath: /src/components/Gallery.tsx/
+// filepath: /src/components/Gallery.tsx
+import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight } from "lucide-react"; // Import icons
 
 const Gallery = () => {
   const galleryItems = [
@@ -22,7 +23,7 @@ const Gallery = () => {
 
 gallery_item_template = '''    {{
       type: "photo",
-      image: "/src/assets/gallery/{folder}/{filename}",
+      image: "/assets/gallery/{folder}/{filename}",
       category: "{folder}"
     }},
 '''
@@ -124,8 +125,21 @@ template_end = '''
           ))}
         </div>
 
+        <div className="text-center bg-card rounded-2xl p-12 border">
+                    <h3 className="text-3xl font-bold mb-6 text-primary">
+                      Submit Botball Pictures
+                    </h3>
+                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+                      If you were a TJHSST Botball team member in the past and have pictures that you would like to contribute, please email us at botball.tj@gmail.com.
+                    </p>
+                  </div>
+
         {enlargedImageIndex !== null && (
           <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+            <div
+              className="absolute inset-0"
+              onClick={handleCloseEnlarged} // Close modal when clicking this div
+            ></div>
             <div className="relative w-[80vw] h-[80vh] flex items-center justify-center">
               <img
                 src={filteredItems[enlargedImageIndex].image}
@@ -162,7 +176,6 @@ template_end = '''
 
 export default Gallery;
 '''
-
 
 folders_and_images: dict[str, list[str]] = {}
 
@@ -220,8 +233,10 @@ for folder in sorted_folder_names:
 
 confirm(f'Is this correct?')
 
-# Ensure the target directory exists
-output_dir = os.path.join(dir_path, "../src/components")
+# Ensure the target directory exists (write to /src/components in project root)
+# project_root -> .../src (two levels up from this gallery folder)
+project_root = os.path.normpath(os.path.join(dir_path, "..", ".."))
+output_dir = os.path.join(project_root, "components")
 os.makedirs(output_dir, exist_ok=True)  # Create the directory if it doesn't exist
 
 output_file_path = os.path.join(output_dir, "Gallery.tsx")

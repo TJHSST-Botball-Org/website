@@ -7,73 +7,73 @@ const Team = () => {
     {
       name: "Devin Park",
       year: "2026",
-      image: "src/assets/members/devin.png",
+      image: "/assets/members/devin.png",
       heightImage: "300px",
     },
     {
       name: "Eric Guo",
       year: "2026",
-      image: "src/assets/members/eric.png",
+      image: "/assets/members/eric.png",
       heightImage: "300px",
     },
     {
       name: "Kimberly Cruz-Cruz",
       year: "2026",
-      image: "src/assets/members/kim.png",
+      image: "/assets/members/kim.png",
       heightImage: "300px",
     },
     {
       name: "Kara Tran",
       year: "2026",
-      image: "src/assets/members/kara.png",
+      image: "/assets/members/kara.png",
       heightImage: "300px",
     },
     {
       name: "Jax O'Donoghue",
       year: "2026",
-      image: "src/assets/members/jax.jpg",
+      image: "/assets/members/jax.jpg",
       heightImage: "300px",
     },
     {
       name: "Surya Raj",
       year: "2027",
-      image: "src/assets/members/surya.jpg",
+      image: "/assets/members/surya.jpg",
       heightImage: "300px",
     },
     {
       name: "Zoya Moloo",
       year: "2027",
-      image: "src/assets/members/zoya.jpg",
+      image: "/assets/members/zoya.jpg",
       heightImage: "300px",
     },
     {
       name: "Agastya Mittal",
       year: "2028",
-      image: "src/assets/members/agastya.png",
+      image: "/assets/members/agastya.png",
       heightImage: "300px",
     },
     {
       name: "Claire Zhu",
       year: "2028",
-      image: "src/assets/members/claire.jpg",
+      image: "/assets/members/claire.jpg",
       heightImage: "300px",
     },
     {
       name: "Kyle Penska",
       year: "2028",
-      image: "src/assets/members/kyle.png",
+      image: "/assets/members/kyle.png",
       heightImage: "300px",
     },
     {
       name: "Madhav Tirumale",
       year: "2028",
-      image: "src/assets/members/madhav.png",
+      image: "/assets/members/madhav.png",
       heightImage: "300px",
     },
     {
       name: "Ronit Singh",
       year: "2028",
-      image: "src/assets/members/ronit.jpg",
+      image: "/assets/members/ronit.jpg",
       heightImage: "300px",
     },
   ];
@@ -87,7 +87,7 @@ const Team = () => {
             2024-2025 Team
           </h2>
           <img
-            src="src/assets/botballgroupteam.jpg"
+            src="/assets/botballgroupteam.jpg"
             className="mx-auto rounded-2xl w-full max-w-3xl aspect-[3/2] object-cover"
           />
           <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto mb-8 mt-5 px-4 leading-tight">

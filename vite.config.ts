@@ -6,6 +6,7 @@ import { viteStaticCopy } from "vite-plugin-static-copy"; // <--- added
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "https://activities.tjhsst.edu/botball/",
   server: {
     host: "::",
     port: 8080,

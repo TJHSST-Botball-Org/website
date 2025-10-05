@@ -3,17 +3,22 @@ import { Github, Instagram, Facebook, Mail, ExternalLink, Heart } from "lucide-r
 import logoImage from "/public/favicon.ico";
 
 const Footer = () => {
-  const quickLinks = [
+  const quickLinksBase = [
     { name: "Home", href: "#home" },
     { name: "What We Do", href: "#about" },
     { name: "Team", href: "#team" },
     { name: "Gallery", href: "#gallery" },
-    { name: "Join Us", href: "#apply" }
   ];
 
+  const today = new Date();
+  const cutoffDate = new Date("2025-10-05T23:59:00");
+  const quickLinks = today <= cutoffDate
+    ? [...quickLinksBase, { name: "Join Us", href: "#apply" }]
+    : quickLinksBase;
+
   const resources = [
-    { name: "Full Gallery", href: "https://activities.tjhsst.edu/botball/gallery.html" },
-    { name: "Botball Official", href: "https://www.botball.org/" },
+    { name: "Official Botball Website", href: "https://www.botball.org/" },
+    {name: "8th Period Sign-Up Link", href: "https://ion.tjhsst.edu/eighth/activity/812"}
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -135,7 +140,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-border/50">
           <div className="flex flex-col items-center text-muted-foreground mb-4 md:mb-0">
             <span>© 2025 TJHSST Botball Robotics. All rights reserved.</span>
-            <span className="text-xs">Created with <Heart className="inline h-4 w-4 text-red-500" /> by Madhav Tirumale - 2025</span>
+            <span className="text-xs">Created by Madhav Tirumale, 2025</span>
           </div>
           <div className="text-muted-foreground text-sm">
             <a 
@@ -144,7 +149,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors duration-300"
             >
-              TJ Student Activities
+              This club is affiliated with TJHSST Student Activities
             </a>
           </div>
         </div>

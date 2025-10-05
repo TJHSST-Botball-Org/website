@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Github, Instagram, Facebook } from "lucide-react";
 
@@ -26,9 +26,17 @@ const Navigation = () => {
     setIsOpen(false);
   };
 
+  const openApplyLink = () => {
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSf6RhiLywXdwoVy1KZjQkoB0D-bNQboxWIrhdtqBu6Gjk94Gg/viewform?usp=dialog",
+      "_blank"
+    );
+    setIsOpen(false);
+  };
+
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 transition-all duration-300 rounded-bl-lg rounded-br-lg ${
         scrolled
           ? "bg-background/80 backdrop-blur-md border-b border-border/50"
           : "bg-gray-700"
@@ -36,7 +44,6 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center h-16 sm:h-20">
-          {/* Removed Logo and Text */}
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button
@@ -86,9 +93,7 @@ const Navigation = () => {
               </Button>
             </div>
             {isBeforeDeadline && (
-              <Button onClick={() => scrollToSection("apply")}>
-                Apply for the Team
-              </Button>
+              <Button onClick={openApplyLink}>Apply for the Team</Button>
             )}
           </div>
           {/* Mobile menu button */}
@@ -176,7 +181,7 @@ const Navigation = () => {
               {isBeforeDeadline && (
                 <div className="px-3 py-2">
                   <Button
-                    onClick={() => scrollToSection("apply")}
+                    onClick={openApplyLink}
                     className="w-full"
                   >
                     Apply for the Team

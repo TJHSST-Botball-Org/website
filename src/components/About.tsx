@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CodeXml, Wrench, Presentation } from "lucide-react";
+import workingAgastyaSurya from "@/assets/robot.jpg";
 
 const About = () => {
   const features = [
@@ -39,8 +40,8 @@ const About = () => {
           <div>
             <div className="relative">
               <img 
-                src="/assets/robot.jpg" 
-                alt="Students working on robots in workshop" 
+                src={workingAgastyaSurya} 
+                alt="Agastya and Surya working on aligning robot in the competition" 
                 className="rounded-lg w-full h-auto"
               />
             </div>

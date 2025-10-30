@@ -23,12 +23,6 @@ const Team = () => {
       heightImage: "300px",
     },
     {
-      name: "Kara Tran",
-      year: "2026",
-      image: "/botball/assets/members/kara.png",
-      heightImage: "300px",
-    },
-    {
       name: "Jax O'Donoghue",
       year: "2026",
       image: "/botball/assets/members/jax.jpg",
@@ -44,6 +38,24 @@ const Team = () => {
       name: "Zoya Moloo",
       year: "2027",
       image: "/botball/assets/members/zoya.jpg",
+      heightImage: "300px",
+    },
+    {
+      name: "Nabi Zekarias",
+      year: "2027",
+      image: "/botball/assets/members/j.png",
+      heightImage: "300px",
+    },
+    {
+      name: "Madhav Tirumale",
+      year: "2028",
+      image: "/botball/assets/members/madhav.png",
+      heightImage: "300px",
+    },
+    {
+      name: "Matthew Chou",
+      year: "2028",
+      image: "/botball/assets/members/j.png",
       heightImage: "300px",
     },
     {
@@ -65,15 +77,33 @@ const Team = () => {
       heightImage: "300px",
     },
     {
-      name: "Madhav Tirumale",
-      year: "2028",
-      image: "/botball/assets/members/madhav.png",
-      heightImage: "300px",
-    },
-    {
       name: "Ronit Singh",
       year: "2028",
       image: "/botball/assets/members/ronit.jpg",
+      heightImage: "300px",
+    },
+    {
+      name: "Emma Tao",
+      year: "2028",
+      image: "/botball/assets/members/emma.jpg",
+      heightImage: "300px",
+    },
+    {
+      name: "Prisha Hasija",
+      year: "2029",
+      image: "/botball/assets/members/j.png",
+      heightImage: "300px",
+    },
+    {
+      name: "Rachel Cao",
+      year: "2029",
+      image: "/botball/assets/members/j.png",
+      heightImage: "300px",
+    },
+    {
+      name: "Justin Jeong",
+      year: "2029",
+      image: "/botball/assets/members/j.png",
       heightImage: "300px",
     },
   ];
@@ -84,7 +114,7 @@ const Team = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            2024-2025 Team
+            2025-2026 Team
           </h2>
           <img
             src="/botball/assets/botballgroupteam.jpg"
@@ -92,10 +122,7 @@ const Team = () => {
           />
           <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto mb-8 mt-5 px-4 leading-tight">
             Mr. Billington, Claire Zhu, Zoya Moloo, Kyle Penska, Jax O'Donoghue,
-            Agastya Mittal, Ronit Singh, Surya Raj, Madhav Tirumale
-          </p>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto mb-8 px-4 leading-tight">
-            Devin Park, Kimberly Cruz-Cruz, Eric Guo
+            Agastya Mittal, Ronit Singh, Surya Raj, Madhav Tirumale, Devin Park, Kimberly Cruz-Cruz, Eric Guo
           </p>
         </div>
 

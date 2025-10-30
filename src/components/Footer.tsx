@@ -149,7 +149,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors duration-300"
             >
-              This club is affiliated with TJHSST Student Activities
+              This club is not affiliated with TJHSST administration.
             </a>
           </div>
         </div>

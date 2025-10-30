@@ -464,6 +464,11 @@ const Gallery = () => {
     },
     {
       type: "photo",
+      image: "/botball/assets/gallery/2024 Regionals/1.jpg",
+      category: "2024 Regionals"
+    },
+    {
+      type: "photo",
       image: "/botball/assets/gallery/2008/0.jpg",
       category: "2008"
     },

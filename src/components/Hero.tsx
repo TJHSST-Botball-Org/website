@@ -53,7 +53,7 @@ const Hero = () => {
             TJHSST Botball Robotics
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
-            The Official Botball Robotics team for Thomas Jefferson High School for Science and Technology
+            The <i><b className="text-white">Unofficial Website</b></i> for the Botball Robotics team of Thomas Jefferson High School for Science and Technology.
           </p>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
             Designing, building, and programming two autonomous robots to compete at regional and international levels.

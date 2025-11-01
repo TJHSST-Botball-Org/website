@@ -17,8 +17,7 @@ const Footer = () => {
     : quickLinksBase;
 
   const resources = [
-    { name: "Official Botball Website", href: "https://www.botball.org/" },
-    {name: "8th Period Sign-Up Link", href: "https://ion.tjhsst.edu/eighth/activity/812"}
+    { name: "KIPR Botball Website", href: "https://www.botball.org/" }
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -43,8 +42,7 @@ const Footer = () => {
               <span className="text-2xl font-bold text-gradient">TJHSST Botball</span>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-6 max-w-md">
-              The official Botball robotics team for Thomas Jefferson High School for Science and Technology. 
-              Building autonomous robots and making new friends along the way.
+              The <b className="text-white">Unofficial Website</b> for the Botball Robotics team of Thomas Jefferson High School for Science and Technology.
             </p>
             <div className="flex space-x-4">
               <Button
@@ -149,7 +147,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors duration-300"
             >
-              This club is not affiliated with TJHSST administration.
+              This club and website are not affiliated with TJHSST administration, and is an <b className="text-white">unoffical website</b> for the TJHSST Botball Robotics club.
             </a>
           </div>
         </div>

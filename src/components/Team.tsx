@@ -43,7 +43,7 @@ const Team = () => {
     {
       name: "Nabi Zekarias",
       year: "2027",
-      image: "/botball/assets/members/j.png",
+      image: "/botball/assets/members/nabi.jpg",
       heightImage: "300px",
     },
     {
@@ -97,7 +97,7 @@ const Team = () => {
     {
       name: "Rachel Cao",
       year: "2029",
-      image: "/botball/assets/members/j.png",
+      image: "/botball/assets/members/rachel.jpg",
       heightImage: "300px",
     },
     {

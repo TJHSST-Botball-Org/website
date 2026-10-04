@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Github, Instagram, Facebook } from "lucide-react";
 
+export const APPLICATION_DEADLINE = new Date("2026-10-10T23:59:00");
+export const APPLICATION_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLScTgwxPZH8Ge_AOCG65Z493zCZOYCCFOFw3zyJmQn8mUjREUg/viewform?usp=preview";
+
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -13,7 +17,7 @@ const Navigation = () => {
     };
     window.addEventListener("scroll", handleScroll);
 
-    const deadline = new Date("2025-10-05T23:59:00");
+    const deadline = APPLICATION_DEADLINE;
     const now = new Date();
     setIsBeforeDeadline(now <= deadline);
 
@@ -27,10 +31,7 @@ const Navigation = () => {
   };
 
   const openApplyLink = () => {
-    window.open(
-      "https://docs.google.com/forms/d/e/1FAIpQLSf6RhiLywXdwoVy1KZjQkoB0D-bNQboxWIrhdtqBu6Gjk94Gg/viewform?usp=dialog",
-      "_blank"
-    );
+    window.open(APPLICATION_FORM_URL, "_blank");
     setIsOpen(false);
   };
 

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Zap, Code, Trophy } from "lucide-react";
 import React from "react";
+import { APPLICATION_DEADLINE } from "./Navigation";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -33,8 +34,7 @@ const Hero = () => {
 
   // Check if applications are closed
   const today = new Date();
-  const cutoffDate = new Date("2025-10-05T23:59:00");
-  const applicationsClosed = today > cutoffDate;
+  const applicationsClosed = today > APPLICATION_DEADLINE;
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center bg-background pt-24 sm:pt-28">

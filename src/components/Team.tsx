@@ -5,30 +5,6 @@ import { Users, Star, Award, Code2 } from "lucide-react";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Devin Park",
-      year: "2026",
-      image: "/botball/assets/members/devin.png",
-      heightImage: "300px",
-    },
-    {
-      name: "Eric Guo",
-      year: "2026",
-      image: "/botball/assets/members/eric.png",
-      heightImage: "300px",
-    },
-    {
-      name: "Kimberly Cruz-Cruz",
-      year: "2026",
-      image: "/botball/assets/members/kim.png",
-      heightImage: "300px",
-    },
-    {
-      name: "Jax O'Donoghue",
-      year: "2026",
-      image: "/botball/assets/members/jax.jpg",
-      heightImage: "300px",
-    },
-    {
       name: "Surya Raj",
       year: "2027",
       image: "/botball/assets/members/surya.jpg",
@@ -55,7 +31,7 @@ const Team = () => {
     {
       name: "Matthew Chou",
       year: "2028",
-      image: "/botball/assets/members/j.png",
+      image: "/botball/assets/members/tungtung.jpeg",
       heightImage: "300px",
     },
     {
@@ -89,21 +65,9 @@ const Team = () => {
       heightImage: "300px",
     },
     {
-      name: "Prisha Hasija",
-      year: "2029",
-      image: "/botball/assets/members/j.png",
-      heightImage: "300px",
-    },
-    {
-      name: "Rachel Cao",
-      year: "2029",
-      image: "/botball/assets/members/rachel.jpg",
-      heightImage: "300px",
-    },
-    {
       name: "Justin Jeong",
       year: "2029",
-      image: "/botball/assets/members/j.png",
+      image: "/botball/assets/members/justin.png",
       heightImage: "300px",
     },
   ];

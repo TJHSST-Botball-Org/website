@@ -13,12 +13,12 @@ const About = () => {
     {
       icon: <Wrench className="h-8 w-8 text-accent" />,
       title: "Precision Building",
-      description: "Using metal, plastic, and electronic parts to construct robust, competition-ready robots."
+      description: "Using metal, plastic, and electronic parts to construct robust robots."
     },
     {
       icon: <CodeXml className="h-8 w-8 text-accent" />,
-      title: "Programming in C++",
-      description: "Writing sophisticated C++ code to control our robots' autonomous behavior."
+      title: "Programming in Python",
+      description: "Writing sophisticated Python code to control our robots' autonomous behavior."
     }
   ];
 
